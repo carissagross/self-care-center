@@ -1,24 +1,30 @@
 # Self Care Center
-## Overview
-How can I care for myself? One way is with affirmations and mantras!
-Affirmations are thoughts of positive self-empowerment, meant to assert your self-worth.
-Mantras are repetive phrases that are repeated again and again during mindfulness practices. Your challenge is to build an app that helps users remind themselves of their inherent value!
+## Introduction
+- The purpose of this project was to allow students to practice some of the foundational concepts learned so far within the module. There are other extensions that test different skills that we can build on. The project allowed us to personalize/entertain different ideas with HTML/CSS as well as the functionality(JavaScript) behind the web page created.
 
-This Solo Challenge gives students and instructors the opportunity to get a pulse on where you are with the foundational concepts of Module 1 curriculum. Students should use this as an opportunity to challenge themselves and work completely independently. Google can (and probably should!) be used, but any other code base should not be referenced. Instructors will be able to use your work, both completion of functionality and code quality, to determine where you stand and if you are behind for this point in the module, provide supports to intervene.
+## Technologies
+- Javascript
+- HTML
+- CSS
 
-The spec for this project can be found [here](https://frontend.turing.io/projects/module-1/self-care-center.html). 
+The spec for this project can be found [here](https://frontend.turing.edu/projects/module-1/self-care-center.html).
 
-## Learning Goals
+## Features
+- Any of the radio buttons chosen will output a specific item from a Mantras or Affirmations Array
+- The Choose Your Own Adventure I chose was the "Error Handling and Clear Button".  The Clear Message button will appear only when "Receive Message" is clicked and the meditation icon will also disappear.  Once the user selects Clear Message, the page will load back to the main form with the selection options.
 
-- Gain experience building an application that utilizes HTML, CSS and JavaScript
-- Write HTML and CSS to match a provided comp
-- Understand how to listen to and respond to user events
-- Individualize your programming skill set
+## Possible Future Extensions
+  - I would like to learn how to create a login page and create the functionality with it
 
-## Setup
+## Set Up
 
-- Fork this project to your own Github account
-- Clone the repository to your local machine
-- `cd` into the project
-- Read this README thoroughly, then begin working!
+1. Fork this repo  
+2. Clone the repo to your local machine
+3. View the project in the browser by running open index.html in your terminal.
 
+
+
+## Sources
+  - [MDN](http://developer.mozilla.org/en-US/)
+  -[YouTube](https://www.youtube.com/)
+  - [W3Schools](https://www.w3schools.com/)
