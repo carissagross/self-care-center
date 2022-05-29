@@ -6,25 +6,29 @@
     <title>Self Care Center</title>
   </head>
   <body>
-    <h1>✨ Self Care Center ✨</h1>
+    <h1>🌼 Self Care Center 🌼</h1>
     <br>
     <br>
     <h2>Which type of message?</h2>
   <div class="message">
      <form>
-       <input type="radio" id="affirmation" name="messageType" value="affirmation">
+       <input type="radio" id="affirmation" name="messageType" value="affirmation" checked>
        <label class="affirmation">affrimation</label><br>
        <input type="radio" id="mantra" name="messageType"     value="mantra">
        <label class="mantra">mantra</label><br>
      </form>
      <button class="receive_message" type="submit" value="receive_message">Receive Message</button>
   </div>
-  <div class="imageBox">
-      <img class="image" src="./assets/meditate.svg" alt="meditating image" id="meditate">
+  <br>
+  <br>
+  <div>
+    <img class="image" src="./assets/meditate.svg" alt="meditating image" id="meditate">
+     <div class="imageBox hidden">
+       <section class="display-message"></section>
+     </div>
+     <section class="message-section"></section>
+     <input class="clear_message hidden" type="reset" value="Clear Message">
   </div>
-  <br>
-  <button class="clear_message" type="reset" value="clear_message">Clear Message</button>
-  <br>
     <script type="text/javascript" src="main.js"></script>
   </body>
 </html>

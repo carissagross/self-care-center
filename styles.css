@@ -27,29 +27,21 @@ h2 {
   text-align: center;
 }
 
-div {
+.message {
+  background-color: #ffffff;
+  border-radius: 10px;
+  color: black;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   font-family: 'Quicksand', sans-serif;
   font-size:15px;
-  color: black;
-  text-align: center;
-  margin: auto;
-  background-color: #ffffff;
-  padding-top: 10px;
-  margin-bottom: 10px;
-  border-radius: 10px;
-}
-
-.message {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  width: 450px;
   height:90px;
-  margin-right: auto;
-  margin-left: auto;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  text-align: center;
+  width: 450px;
 }
 
 form {
@@ -57,10 +49,6 @@ form {
   justify-content: center;
   width: 400px;
   margin: auto;
-}
-
-label {
-  margin-right: 40px;
 }
 
 .affirmation {
@@ -72,36 +60,31 @@ label {
   font-style: italic;
 }
 
-button {
+.receive_message {
+  align-content: center;
+  align-items: center;
   background-color: #134d71;
-  margin-bottom: 15px;
-  font-family: 'Quicksand', sans-serif;
-  color: #ffffff;
-  height: 70px;
-  width: 180px;
   border: 0;
-  font-size:15px;
-  text-align: center;
   border-radius: 6px;
+  color: #ffffff;
   cursor: pointer;
+  display: flex;
+  font-size:15px;
+  font-family: 'Quicksand', sans-serif;
+  height: 30px;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+  width: 180px;
 }
 
-input {
-  font-family: 'Quicksand', sans-serif;
-  font-size:15px;
-  color: black;
-  text-align: center;
-  margin: right;
-  background-color: #ffffff;
-  padding-top: 18px;
-  margin-bottom: 30px;
-  border-radius: 10px;
+label {
+  margin-right: 40px;
 }
 
 .clear_message {
-  display: flex;
-  align-content: flex-end;
   justify-content: center;
+  display: flex;
   align-items: center;
   background-color: #134d71;
   font-family: 'Quicksand', sans-serif;
@@ -112,50 +95,42 @@ input {
   text-align: center;
   border-radius: 6px;
   cursor: pointer;
+  border: 0;
   margin: auto;
-}
-
-.imageBox {
-  width: 600px;
-  height: 100px;
-  margin-top: 100px;
-  display: flex;
-  align-items: center;
-}
-
-.clear_message {
-  display: flex;
-  background-color: #134d71;
-  font-family: 'Quicksand', sans-serif;
-  color: #ffffff;
-  height: 40px;
-  width: 153px;
-  font-size:15px;
   text-align: center;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-.image {
-  display: flex;
-  width: 60px;
-  height: 60px;
-  align: auto;
 }
 
 .display-message {
-  display: flex;
-  justify-content: center;
-  justify-content: space-between;
-  flex-direction: row-reverse
-  font-size: 15px;
   align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Quicksand', sans-serif;
+  font-size:15px;
+  height:90px;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  text-align: center;
+  width: 600px;
+}
+
+.image {
+  align-items: center;
+  border-radius: 10px;
+  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60px;
+  height: 60px;
 }
 
 .hidden {
-  display: none;
-}
-
-.display-message.hidden {
   display: none;
 }

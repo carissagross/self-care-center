@@ -1,10 +1,9 @@
 var messageType = document.querySelectorAll('input[name="messageType"]');
 var receiveMessageButton = document.querySelector('.receive_message');
-var meditateImage = document.querySelector("img[src='./assets/meditate.svg']");
+var meditateImage = document.querySelector('.image');
 var imageBox = document.querySelector('.imageBox');
 var clearButton = document.querySelector('.clear_message');
-var message = document.querySelector('.display-message');
-
+var messageDisplay = document.querySelector('.display-message');
 
 
 var affirmations =
@@ -45,8 +44,6 @@ function getRandomIndex(array) {
   return Math.floor(Math.random() * array.length);
 }
 
-affirmations[getRandomIndex(affirmations)];
-mantras[getRandomIndex(mantras)];
 
 // returns the value of selected radio buttons
 function isChecked() {
@@ -59,23 +56,25 @@ function isChecked() {
 
 receiveMessageButton.addEventListener('click', displayMessage)
 
-function displayMessage(event) {
+function displayMessage() {
   var checkedButton = isChecked();
+  clearButton.classList.remove('hidden');
+  meditateImage.classList.add('hidden');
+  imageBox.classList.remove('hidden');
     if (checkedButton === 'affirmation') {
-        meditateImage.classList.add('hidden');
-        return imageBox.innerHTML +=
+        messageDisplay.innerHTML =
         `<section class="display-message">${affirmations[getRandomIndex(affirmations)]}</section>`
       } else if (checkedButton === 'mantra') {
-          meditateImage.classList.add('hidden');
-          return imageBox.innerHTML +=
+            messageDisplay.innerHTML =
           `<section class="display-message">${mantras[getRandomIndex(mantras)]}</section>`
-        } else {
-          return imageBox.innerHTML = `Please pick an option`
-          }
+        }
 }
 
 clearButton.addEventListener('click', clearMessage)
 
 function clearMessage() {
-// return meditateImage.classList.remove('hidden');
+  clearButton.classList.add('hidden');
+  meditateImage.classList.remove('hidden');
+  imageBox.classList.add('hidden');
+  messageDisplay.classList.remove('hidden');
 }
