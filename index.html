@@ -7,21 +7,21 @@
   </head>
   <body>
     <h1>✨ Self Care Center ✨</h1>
+    <br>
+    <br>
     <h2>Which type of message?</h2>
-     <div>
-      <input type="radio" id="messageType1" name="affirmation" value="randomAffirmation"
-                 checked>
-       <label for="messageType1">affimration</label>
-       <input type="radio" id="messageType2" name="mantra" value="randomMantra"
-                 checked>
-       <label for="messageType2">mantra</label>
-     <div>
-      <button type="submit" value="receive_message">Receive Message</button>
-     </div>
-    <div>
-
-        </div>
-
+  <div class="message">
+     <form>
+       <input type="radio" id="affirmation" name="messageType" value="affirmation">
+       <label class="affirmation">affrimation</label><br>
+       <input type="radio" id="mantra" name="messageType"     value="mantra">
+       <label class="mantra">mantra</label><br>
+     </form>
+     <button class="receive_message" type="submit" value="receive_message">Receive Message</button>
+  </div>
+  <div class="imageBox">
+       <img src="./assets/meditate.svg" alt="meditating image">
+    </div>
     <script type="text/javascript" src="main.js"></script>
   </body>
 </html>

@@ -8,7 +8,7 @@ black - #000000;
 */
 
 /*entire page*/
-body, html {
+html {
   height: 100%;
   background-image: linear-gradient(#134d71, #78a7c6, #f7e4bf);
 }
@@ -67,10 +67,7 @@ label {
 .affirmation {
   margin-right: 140px;
   font-style: italic;
-}
 
-.mantra {
-  font-style: italic;
 }
 
 button {
@@ -84,6 +81,7 @@ button {
   font-size:15px;
   text-align: center;
   border-radius: 6px;
+  cursor: pointer;
 }
 
 input {
