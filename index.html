@@ -10,25 +10,23 @@
     <br>
     <br>
     <h2>Which type of message?</h2>
-  <div class="message">
-     <form>
-       <input type="radio" id="affirmation" name="messageType" value="affirmation" checked>
-       <label class="affirmation">affrimation</label><br>
-       <input type="radio" id="mantra" name="messageType"     value="mantra">
-       <label class="mantra">mantra</label><br>
-     </form>
-     <button class="receive_message" type="submit" value="receive_message">Receive Message</button>
-  </div>
-  <br>
-  <br>
-  <div>
-    <img class="image" src="./assets/meditate.svg" alt="meditating image" id="meditate">
-     <div class="imageBox hidden">
-       <section class="display-message"></section>
-     </div>
-     <section class="message-section"></section>
+    <section class="display-message">
+      <div class="message">
+        <form>
+          <input type="radio" id="affirmation" name="messageType" value="affirmation" checked>
+          <label class="affirmation">affrimation</label>
+          <input type="radio" id="mantra" name="messageType"     value="mantra">
+          <label class="mantra">mantra</label>
+        </form>
+        <button class="receive_message" type="submit" value="receive_message">Receive Message</button>
+      </div>
+      <div class="messageTwo">
+        <img class="image" src="./assets/meditate.svg" alt="meditating image" id="meditate">
+        <p class="output"></p>
+      </div>
      <input class="clear_message hidden" type="reset" value="Clear Message">
-  </div>
+    </div>
+    </section>
     <script type="text/javascript" src="main.js"></script>
   </body>
 </html>

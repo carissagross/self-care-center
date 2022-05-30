@@ -1,7 +1,9 @@
 var messageType = document.querySelectorAll('input[name="messageType"]');
 var receiveMessageButton = document.querySelector('.receive_message');
 var meditateImage = document.querySelector('.image');
-var imageBox = document.querySelector('.imageBox');
+var affirmation = document.querySelector('#affirmation');
+var mantra = document.querySelector('#mantra');
+var textOutput = document.querySelector('.output')
 var clearButton = document.querySelector('.clear_message');
 var messageDisplay = document.querySelector('.display-message');
 
@@ -39,34 +41,28 @@ var mantras =
 "Onward and upward.",
 "I am the sky, the rest is weather."]
 
-// function for random index
-function getRandomIndex(array) {
-  return Math.floor(Math.random() * array.length);
+
+function randomAffirmation() {
+  var affirmation = affirmations[Math.floor(Math.random() * affirmations.length)]
+  textOutput.innerText = affirmation;
 }
 
-
-// returns the value of selected radio buttons
-function isChecked() {
-  for (var i = 0; i < messageType.length; i++) {
-    if (messageType[i].checked) {
-      return messageType[i].value
-    }
-  }
+function randomMantra() {
+  var mantra = mantras[Math.floor(Math.random() * mantras.length)]
+  textOutput.innerText = mantra;
 }
+
 
 receiveMessageButton.addEventListener('click', displayMessage)
 
 function displayMessage() {
-  var checkedButton = isChecked();
-  clearButton.classList.remove('hidden');
-  meditateImage.classList.add('hidden');
-  imageBox.classList.remove('hidden');
-    if (checkedButton === 'affirmation') {
-        messageDisplay.innerHTML =
-        `<section class="display-message">${affirmations[getRandomIndex(affirmations)]}</section>`
-      } else if (checkedButton === 'mantra') {
-            messageDisplay.innerHTML =
-          `<section class="display-message">${mantras[getRandomIndex(mantras)]}</section>`
+    if (affirmation.checked) {
+      randomAffirmation()
+        meditateImage.classList.add('hidden');
+        clearButton.classList.remove('hidden');
+      } else if (mantra.checked) {
+        randomMantra()
+          meditateImage.classList.add('hidden');
         }
 }
 
@@ -75,6 +71,5 @@ clearButton.addEventListener('click', clearMessage)
 function clearMessage() {
   clearButton.classList.add('hidden');
   meditateImage.classList.remove('hidden');
-  imageBox.classList.add('hidden');
-  messageDisplay.classList.remove('hidden');
+  textOutput.classList.add('hidden');
 }

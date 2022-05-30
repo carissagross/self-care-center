@@ -35,7 +35,7 @@ h2 {
   flex-direction: column;
   font-family: 'Quicksand', sans-serif;
   font-size:15px;
-  height:90px;
+  height:100px;
   justify-content: center;
   margin: auto;
   margin-bottom: 10px;
@@ -44,20 +44,41 @@ h2 {
   width: 450px;
 }
 
-form {
+.messageTwo {
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  color: black;
   display: flex;
+  flex-direction: column;
+  font-family: 'Quicksand', sans-serif;
+  font-size:15px;
+  height:90px;
   justify-content: center;
-  width: 400px;
   margin: auto;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  text-align: center;
+  width: 600px;
 }
 
-.affirmation {
-  margin-right: 140px;
+form {
+  padding-left: 22px;
+  padding-right: 20px;
   font-style: italic;
+  border-radius: 10px;
+  background-color: #ffffff;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  text-align: center;
+  width: 400px;
 }
 
-.mantra {
+#mantra {
   font-style: italic;
+  margin-left: 100px;
 }
 
 .receive_message {
@@ -71,15 +92,11 @@ form {
   display: flex;
   font-size:15px;
   font-family: 'Quicksand', sans-serif;
-  height: 30px;
+  height: 28px;
   justify-content: center;
   margin: auto;
   text-align: center;
   width: 180px;
-}
-
-label {
-  margin-right: 40px;
 }
 
 .clear_message {
@@ -101,34 +118,16 @@ label {
 }
 
 .display-message {
-  align-items: center;
-  background-color: #ffffff;
-  border-radius: 10px;
-  color: black;
-  display: flex;
+  dipslay: flex;
   flex-direction: column;
-  font-family: 'Quicksand', sans-serif;
-  font-size:15px;
-  height:90px;
   justify-content: center;
-  margin: auto;
-  margin-bottom: 10px;
-  padding-top: 10px;
-  text-align: center;
-  width: 600px;
+  align-items: center;
 }
 
 .image {
-  align-items: center;
-  border-radius: 10px;
-  display: block;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
   width: 60px;
   height: 60px;
+  margin-top: 20px;
 }
 
 .hidden {
