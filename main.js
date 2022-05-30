@@ -63,6 +63,7 @@ function displayMessage() {
       } else if (mantra.checked) {
         randomMantra()
           meditateImage.classList.add('hidden');
+          clearButton.classList.remove('hidden');
         }
 }
 
